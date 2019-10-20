@@ -5,6 +5,8 @@ Don't be alarmed by the NCDC URL. The National Climactic Data Center (NCDC) is t
 
 # NCEI Data Service API - https://www.ncei.noaa.gov/support/access-data-service-api-user-documentation
 
+Use this API to get weather data.
+
 **GET** `https://www.ncei.noaa.gov/access/services/data/v1?{paramKey1}={val1}&{paramKey2}={val2}`
 
 |Parameter Key|Possible Values|Our Description|NCEI Description|
@@ -20,9 +22,12 @@ Don't be alarmed by the NCDC URL. The National Climactic Data Center (NCDC) is t
 |includeAttributes|true, false||Includes the attribute for a selected datatype. These are typically comma separated (e.g., “T,,0,0700”), and added to the results if the includeAttributes parameter is set to true. This value can be the word true or a numeric representation of the boolean value, 1. The default value is false or 0 and will not display datatype(s) attributes.|
 |includeStationName|true, false||Includes the station’s name, if available, for the selected dataset and data type. This value can be the word true or a numeric representation of the boolean value, 1. The default value is false or 0 and will not display datatype(s) attributes.|
 |includeStationLocation|1, 0, true, false||Includes the station’s location, if available, for the selected dataset and data type. This value can be the word true or a numeric representation of the boolean value, 1. The default value is false or 0 and will not display datatype(s) attributes.|
-|units|metric||The units parameter converts the output data for datasets and datatypes that support conversion to either “metric” or “standard” units.|
+|units|metric, standard||The units parameter converts the output data for datasets and datatypes that support conversion to either “metric” or “standard” units.|
+
 
 # NCEI Support Service API - https://www.ncei.noaa.gov/support/access-support-service
+
+Use this API to get information about what attributes are available for a given dataset.
 
 **GET** `https://www.ncei.noaa.gov/access/services/support/v3/{datasetId}.json`
 
