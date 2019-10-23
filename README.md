@@ -35,7 +35,7 @@ Use this API to get weather data.
 
 Use this API to get information about what attributes are available for a given dataset.
 
-**GET** `https://www.ncei.noaa.gov/access/services/support/v3/datasets{datasetId}.json`
+**GET** `https://www.ncei.noaa.gov/access/services/support/v3/datasets/{datasetId}.json`
 
 |Parameter Key|Possible Values|Our Description|NCEI Description|
 |---|---|---|---|
