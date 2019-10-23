@@ -1,4 +1,4 @@
-This guide is an attempt to demystify the suite of API's provided by the National Oceanic and Atmospheric Administration's (NOAA's) National Centers for Environmental Information (NCEI), which are rather sparsely documented.
+This guide is an attempt to demystify the suite of APIs provided by the National Oceanic and Atmospheric Administration's (NOAA's) National Centers for Environmental Information (NCEI), which are rather sparsely documented.
 
 First, request a token at this URL: https://www.ncdc.noaa.gov/cdo-web/token
 Don't be alarmed by the NCDC URL. The National Climactic Data Center (NCDC) is the former name of the NCEI.
@@ -337,5 +337,6 @@ Use this API to get information about what attributes are available for a given 
 |---|---|---|---|
 |datasetId|daily-summaries, global-marine, global-summary-of-the-year||The National Centers for Environmental Information (NCEI) Common Access Support Service provides a RESTful application programming interface (API) to discover metadata and attributes about datasets based on a set of parameters to the /v3/datasets URL. |
 
-Other NOAA weather/climate API's:
+Other NOAA weather/climate APIs:
 * Climate Data Online (CDO) - https://www.ncdc.noaa.gov/cdo-web/webservices/v2
+* List of extant NCEI APIs and their statuses - https://www.ncdc.noaa.gov/cdo-web/webservices
