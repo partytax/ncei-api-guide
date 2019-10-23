@@ -1,9 +1,13 @@
 This guide is an attempt to demystify the suite of APIs provided by the National Oceanic and Atmospheric Administration's (NOAA's) National Centers for Environmental Information (NCEI), which are rather sparsely documented.
 
+# Climate Data Online - https://www.ncdc.noaa.gov/cdo-web/webservices/v2
+
 First, request a token at this URL: https://www.ncdc.noaa.gov/cdo-web/token
 Don't be alarmed by the NCDC URL. The National Climactic Data Center (NCDC) is the former name of the NCEI.
 
-# NCEI Data Service API - https://www.ncei.noaa.gov/support/access-data-service-api-user-documentation
+further documentation to come...
+
+# Data Service API - https://www.ncei.noaa.gov/support/access-data-service-api-user-documentation
 
 Use this API to get weather data.
 
@@ -327,7 +331,7 @@ Use this API to get weather data.
 |<span id='station_name'>station_name</span>|station identification code|
 |<span id='time'>time</span>|time of observation|
 
-# NCEI Support Service API - https://www.ncei.noaa.gov/support/access-support-service
+# Support Service API - https://www.ncei.noaa.gov/support/access-support-service
 
 Use this API to get information about what attributes are available for a given dataset.
 
