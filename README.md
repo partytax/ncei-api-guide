@@ -7,6 +7,12 @@ Don't be alarmed by the NCDC URL. The National Climactic Data Center (NCDC) is t
 
 further documentation to come...
 
+# Search Service API - https://www.ncei.noaa.gov/support/access-search-service-api-user-documentation
+
+Use this API to "discover datasets and data."
+
+documentation to come...
+
 # Data Service API - https://www.ncei.noaa.gov/support/access-data-service-api-user-documentation
 
 Use this API to get weather data.
