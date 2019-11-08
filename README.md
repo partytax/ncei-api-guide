@@ -1,25 +1,19 @@
-This guide is an attempt to demystify the suite of APIs provided by the National Oceanic and Atmospheric Administration's (NOAA's) National Centers for Environmental Information (NCEI), which are rather sparsely documented.
+# NCEI API Guide
 
-# Climate Data Online - https://www.ncdc.noaa.gov/cdo-web/webservices/v2
+This guide is an attempt to demystify the suite of APIs provided by the National Oceanic and Atmospheric Administration's (NOAA's) National Centers for Environmental Information (NCEI), which are rather sparsely documented. 
 
-First, request a token at this URL: https://www.ncdc.noaa.gov/cdo-web/token
-Don't be alarmed by the NCDC URL. The National Climactic Data Center (NCDC) is the former name of the NCEI.
+As of 2019-11-08, there are at least 5 APIs offered by the NCEI, four within the 'NCEI Suite' and one inherited from the NCDC when they were gobbled up by the NCEI.
+|
 
-further documentation to come...
-
-# Search Service API (NCEI Common Access Search Service) - https://www.ncei.noaa.gov/support/access-search-service-api-user-documentation
-
-Use this API to "discover datasets and data.
-
-**GET** `https://www.ncei.noaa.gov/access/services/search/v1/data?{paramKey1}={val1}&{paramKey2}={val2}`
-
-documentation to come...
-
-# Data Service API - https://www.ncei.noaa.gov/support/access-data-service-api-user-documentation
+## Data Service API (NCEI Access Data Service) - https://www.ncei.noaa.gov/support/access-data-service-api-user-documentation
 
 Use this API to get weather data.
 
+### Endpoint
+
 **GET** `https://www.ncei.noaa.gov/access/services/data/v1?{paramKey1}={val1}&{paramKey2}={val2}`
+
+### Parameters
 
 |Parameter Key|Possible Values|Our Description|NCEI Description|
 |---|---|---|---|
@@ -36,8 +30,8 @@ Use this API to get weather data.
 |includeStationLocation|1, 0, true, false||Includes the station’s location, if available, for the selected dataset and data type. This value can be the word true or a numeric representation of the boolean value, 1. The default value is false or 0 and will not display datatype(s) attributes.|
 |units|metric, standard||The units parameter converts the output data for datasets and datatypes that support conversion to either “metric” or “standard” units.|
 
-## Detailed Value Descriptions
-### dataTypes
+### Detailed Value Descriptions
+#### dataTypes
 
 |Value|NCEI Description|
 |---|---|
@@ -339,15 +333,70 @@ Use this API to get weather data.
 |<span id='station_name'>station_name</span>|station identification code|
 |<span id='time'>time</span>|time of observation|
 
-# Support Service API - https://www.ncei.noaa.gov/support/access-support-service
+### Examples
+
+documentation to come...
+
+## Search Service API (NCEI Common Access Search Service) - https://www.ncei.noaa.gov/support/access-search-service-api-user-documentation
+
+Use this API to "discover datasets and data.
+
+### Endpoint
+
+**GET** `https://www.ncei.noaa.gov/access/services/search/v1/data?{paramKey1}={val1}&{paramKey2}={val2}`
+
+### Parameters
+
+documentation to come...
+
+### Examples
+
+documentation to come...
+
+
+
+## Order Service API (NCEI Common Access Order Service) - https://www.ncei.noaa.gov/support/access-order-service
+
+### Endpoint
+
+**GET** `https://www.ncei.noaa.gov/access/services/orders/v1?email=charles.burris@noaa.gov&limit=5&offset=0`
+
+### Parameters
+
+documentation to come...
+
+### Examples
+
+documentation to come...
+
+
+
+## Support Service API (NCEI Common Access Support Service) - https://www.ncei.noaa.gov/support/access-support-service
 
 Use this API to get information about what attributes are available for a given dataset.
 
+### Endpoint
+
 **GET** `https://www.ncei.noaa.gov/access/services/support/v3/datasets/{datasetId}.json`
+
+### Parameters
 
 |Parameter Key|Possible Values|Our Description|NCEI Description|
 |---|---|---|---|
 |datasetId|daily-summaries, global-marine, global-summary-of-the-year||The National Centers for Environmental Information (NCEI) Common Access Support Service provides a RESTful application programming interface (API) to discover metadata and attributes about datasets based on a set of parameters to the /v3/datasets URL. |
+
+### Examples
+
+documentation to come...
+
+
+
+## Climate Data Online - https://www.ncdc.noaa.gov/cdo-web/webservices/v2
+>Access to Climate Data Online (CDO) Advanced Programming Interface (API) is changing. The CDO API version 2 is at end-of-life and will be shutdown after 7/15/2019.
+
+~~First, request a token at this URL: https://www.ncdc.noaa.gov/cdo-web/token
+Don't be alarmed by the NCDC URL. The National Climactic Data Center (NCDC) is the former name of the NCEI.~~
+
 
 Other NOAA weather/climate APIs:
 * Climate Data Online (CDO) - https://www.ncdc.noaa.gov/cdo-web/webservices/v2
