@@ -403,5 +403,3 @@ documentation to come...
 
 ~~First, request a token at this URL: https://www.ncdc.noaa.gov/cdo-web/token
 Don't be alarmed by the NCDC URL. The National Climactic Data Center (NCDC) is the former name of the NCEI.~~
-
-* List of extant NCEI APIs and their statuses - https://www.ncdc.noaa.gov/cdo-web/webservices
