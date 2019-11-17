@@ -400,7 +400,7 @@ Use this API to get information about what attributes are available for a given 
 
 ### Examples
 
-documentation to come...
+`https://www.ncei.noaa.gov/access/services/support/v3/datasets/daily-summaries.json`
 
 
 
