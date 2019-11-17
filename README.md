@@ -370,7 +370,9 @@ documentation to come...
 
 ### Parameters
 
-documentation to come...
+|Parameter Key|Possible Values|Our Description|NCEI Description|
+|---|---|---|---|
+|||||
 
 ### Examples
 
