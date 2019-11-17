@@ -368,7 +368,7 @@ documentation to come...
 
 ### Endpoint
 
-**GET** `https://www.ncei.noaa.gov/access/services/orders/v1?email=charles.burris@noaa.gov&limit=5&offset=0`
+**GET** `https://www.ncei.noaa.gov/access/services/orders/v1?{paramKey1}={val1}&{paramKey2}={val2}`
 
 ### Parameters
 
@@ -380,7 +380,7 @@ documentation to come...
 
 ### Examples
 
-documentation to come...
+`https://www.ncei.noaa.gov/access/services/orders/v1?email=charles.burris@noaa.gov&limit=5&offset=0`
 
 
 
