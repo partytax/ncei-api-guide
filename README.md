@@ -354,7 +354,9 @@ Use this API to "discover datasets and data.
 
 ### Parameters
 
-documentation to come...
+|Parameter Key|Possible Values|Our Description|NCEI Description|
+|---|---|---|---|
+|||||
 
 ### Examples
 
