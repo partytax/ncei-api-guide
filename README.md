@@ -356,7 +356,15 @@ Use this API to "discover datasets and data.
 
 |Parameter Key|Possible Values|Our Description|NCEI Description|
 |---|---|---|---|
-|||||
+|dataset|daily-summaries|||
+|startDate|2010-01-01T00:00:00|||
+|endDate|2016-12-31T23:09:59||
+|boundingBox|35.462327,-82.563951,35.412327,-82.513951|||
+|dataTypes|PRCP|||
+|stations|USW00003812|||
+|limit|10|||
+|offset|0|||
+
 
 ### Examples
 
