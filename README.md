@@ -395,9 +395,9 @@ documentation to come...
 
 |Parameter Key|Possible Values|Our Description|NCEI Description|
 |---|---|---|---|
-|email||||
-|limit||||
-|offset||||
+|email|john.smith@noaa.gov|||
+|limit|10|||
+|offset|0|||
 
 ### Examples
 
