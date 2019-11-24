@@ -357,9 +357,12 @@ Use this API to "discover datasets and data.
 |Parameter Key|Possible Values|Our Description|NCEI Description|
 |---|---|---|---|
 |dataset|daily-summaries|||
-|startDate|2010-01-01T00:00:00|||
-|endDate|2016-12-31T23:09:59||
-|boundingBox|35.462327,-82.563951,35.412327,-82.513951|||
+|startDate|2010-01-01T00:00:00||This is the date to select datasets whose period of record (PoR) starts on or after the given startDate. This parameter is an ISO 8601 date (YYYY-MM-DD) -or- ISO 8601 combined date and time format (YYYY-MM-DDTHH:mm:ss). If using an ISO 8601 combined date and time format, the T that separates the time is NOT optional. The ISO 8601 combined date and time also supports optional time zone representations.  Use Z or z for UTC and +HH:mm or -HH:mm for the offset from UTC. The start and end dates are not required. The startDate must come before the endDate parameter. Some datasets are averages over time and may ignore parts of a date.|
+|endDate|2016-12-31T23:09:59||This is the date to select datasets whose period of record (PoR) starts on or after the given startDate. This parameter is an ISO 8601 date (YYYY-MM-DD) -or- ISO 8601 combined date and time format (YYYY-MM-DDTHH:mm:ss). If using an ISO 8601 combined date and time format, the T that separates the time is NOT optional. The ISO 8601 combined date and time also supports optional time zone representations.  Use Z or z for UTC and +HH:mm or -HH:mm for the offset from UTC. The start and end dates are not required. The startDate must come before the endDate parameter. Some datasets are averages over time and may ignore parts of a date.|
+|boundingBox OR bbox|35.462327,-82.563951,35.412327,-82.513951||The bounding box is used to select data from a geographic location contained within the coordinates, given as four comma separated numbers. North and South range from -90 to 90 and East and West range from -180 to 180. If these are not set the geographic extent defaults to the entire globe (90,-180,-90,180).|
+|keywords|precipitation||The text parameter used to locate datasets by matching the terms of the dataset name and description.|
+|text|rain||The text parameter used to locate datasets by matching the terms of the dataset name and description.|
+|available|true, false||A boolean (true or false) used to locate datasets based on whether they are available in the Data Search Endpoint.|
 |dataTypes|PRCP|||
 |stations|USW00003812|||
 |limit|10|||
