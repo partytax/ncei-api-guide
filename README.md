@@ -344,6 +344,12 @@ Use this API to get weather data.
 
 documentation to come...
 
+### Response
+
+|key|value|
+|---|---|
+|||
+
 ## Search Service API (NCEI Common Access Search Service) - https://www.ncei.noaa.gov/support/access-search-service-api-user-documentation
 
 Use this API to "discover datasets and data.
@@ -373,7 +379,11 @@ Use this API to "discover datasets and data.
 
 documentation to come...
 
+### Response
 
+|key|value|
+|---|---|
+|||
 
 ## Order Service API (NCEI Common Access Order Service) - https://www.ncei.noaa.gov/support/access-order-service
 
@@ -393,6 +403,11 @@ documentation to come...
 
 `https://www.ncei.noaa.gov/access/services/orders/v1?email=charles.burris@noaa.gov&limit=5&offset=0`
 
+### Response
+
+|key|value|
+|---|---|
+|||
 
 
 ## Support Service API (NCEI Common Access Support Service) - https://www.ncei.noaa.gov/support/access-support-service
@@ -413,7 +428,11 @@ Use this API to get information about what attributes are available for a given 
 
 `https://www.ncei.noaa.gov/access/services/support/v3/datasets/daily-summaries.json`
 
+### Response
 
+|key|value|
+|---|---|
+|||
 
 ## Climate Data Online - https://www.ncdc.noaa.gov/cdo-web/webservices/v2
 >Access to Climate Data Online (CDO) Advanced Programming Interface (API) is changing. The CDO API version 2 is at end-of-life and will be shutdown after 7/15/2019.
