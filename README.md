@@ -395,9 +395,9 @@ documentation to come...
 
 |Parameter Key|Possible Values|Our Description|NCEI Description|
 |---|---|---|---|
-|email|john.smith@noaa.gov|||
-|limit|10|||
-|offset|0|||
+|email|john.smith@noaa.gov||The email parameter is required, while the limit and offset are not.|
+|limit|10||Limit and offset parameters can be used for paginated resultsets. The limit parameter sets the number of orders per page.|
+|offset|0||Limit and offset parameters can be used for paginated resultsets. The offset parameter delegates the starting point of the orders resultset.|
 
 ### Examples
 
